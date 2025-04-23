@@ -3,9 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tabla</title>
+    <title>Factura</title>
 </head>
 <body>
-    
+    <h1 style="color:blue;"><em>Factura la Casita Feliz</em></h1>
+    <table border="1">
+      <caption><i>Comprobante</i></caption>
+
+      <thead>
+        <tr>
+            <th colspan="5">Factura de compras</th>
+        </tr>
+      </thead>
+
+      <tfoot>
+        <tr>
+            <td colspan="5" style="font-size: 13px; text-align: right;"><em>Impresion para el cliente</em></td>
+        </tr>
+      </tfoot>
+
+      <tbody>
+        <tr>
+            <th>Codigo del vendedor</th>
+            <td colspan="2" style="text-align: center">001</td>
+            <th>Fecha</th>
+            <td colspan="2" style="text-align: right">12/07/2020</td>
+        </tr>
+        <tr>
+            <th rowspan="4" style="text-align: center">Datos del cliente</th>
+            <th colspan="2">Nombre</th>
+            <td colspan="2" style="text-align: right">Juan Diaz Prado</td>
+        </tr>
+        <tr>
+            <th colspan="2">Dirección</th>
+            <td colspan="2" style="text-align: right">Balta #140</td>
+        </tr>
+        <tr>
+            <th colspan="2">RUC</th>
+            <td colspan="2" style="text-align: right">568734674578</td>
+        </tr>
+        <tr>
+            <th colspan="2">Telefono</th>
+            <td colspan="2" style="text-align: right">074-675443</td>
+        </tr>
+        <tr>
+            <td colspan="5" style="height: 20px;"></td>
+        </tr>
+        <tr>
+            <th>CÓDIGO</th>
+            <th>PRODUCTO</th>
+            <th>CANTIDAD</th>
+            <th>PRECIO UNITARIO</th>
+            <th>TOTAL PARCIAL</th>
+        </tr>
+        <tr>
+            <td>p001</td>
+            <td>Cemento rojo</td>
+            <td>2</td>
+            <td>S/. 55.00</td>
+            <td>S/. 110.00</td>
+        </tr>
+        <tr>
+            <td>p002</td>
+            <td>Calaminas</td>
+            <td>5</td>
+            <td>S/. 65.00</td>
+            <td>S/. 325.00</td>
+        </tr>
+        <tr>
+            <td>p003</td>
+            <td>Pernos</td>
+            <td>20</td>
+            <td>S/. 1.50</td>
+            <td>S/. 30.00</td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>&nbsp</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th rowspan="3" style="text-align: center">Vendedor</th>
+            <td rowspan="3" colspan="2" style="text-align: center">David Carranza</td>
+            <th style="text-align: center">Subtotal</th>
+            <td style="text-align: right">S/ 465.00</td>
+        </tr>
+        <tr>
+            <th style="text-align: center">IGV</th>
+            <td style="text-align: right">S/ 83.70</td>
+        </tr>
+        <tr>
+            <th style="text-align: center">Total Final</th>
+            <td style="text-align: right">S/ 548.70</td>
+        </tr>
+      </tbody>
+    </table>
 </body>
 </html>
