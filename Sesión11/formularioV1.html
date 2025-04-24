@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <div id="Contenedor" style="width: 500px;">
+       <h2> Encuesta Laboral </h2> 
+
+       <form id="formulario1" name="formulario1" method="post" action="data.php">
+        <fieldset id="datos personales">
+            <legend> Datos Personales</legend>
+
+            <label for="nombre"> Nombre y Apellidos</label><br>
+            <input type="text" name="nombre" id="nombre"><br><br>
+      
+            <label for="direccion"> Dirección </label><br>
+            <input type="text" name="direccion" id="direccion"><br><br>
+
+            <label for="telef"> Telef| Cel</label><br>
+            <input type="text" name="telef" id="tetef"><br><br>
+
+            <label for="fechaIngreso"> Fecha Ingreso</label><br>
+            <select id="fechaIngreso" name="fechaIngreso">
+                <option value="X" selected="selected" >2023</option>
+                <option value="A">2022</option>
+                <option value="B">2021</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="puestoTrabajo"> Puesto de Trabajo</label><br>
+            <select id="puestoTrabajo" name="puestoTrabajo">
+                <option value="X" selected="selected" >Modelo</option>
+                <option value="A">Modelo2</option>
+                <option value="B">Modelo3</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="dni">DNI</label><br>
+            <input type="text" name="dni" id="dni" maxlength="9"><br><br>
+
+            <label for="email"> Email </label><br>
+            <input type="text" name="email" id="email"><br>
+
+        </fieldset> 
+        <br>
+        <fieldset id="datos personales">
+
+            <legend> Estado Civil </legend>
+            <label>
+                <input type="radio" name="soltero"> Soltero
+            </label> <br>
+
+            <label>
+                <input type="radio" name="casado"> Casado
+            </label> <br>
+
+            <label>
+                <input type="radio" name="Viudo"> Viudo
+            </label> <br>
+
+        </fieldset>
+       </form>
+    </div>
+</body>
+</html>
