@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #83a4d4, #b6fbff); /* Fondo en degradado bonito */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #Contenedor {
+            width: 600px;
+            margin: 50px auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        fieldset {
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #2980b9;
+            padding: 0 10px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        input[type="text"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        #botones {
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+
+        /* Fondo decorativo (opcional) */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d?fit=crop&w=1470&q=80'); /* Imagen bonita */
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1; /* Imagen muy clarita para que no moleste */
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <div id="Contenedor">
+       <h2>FORMULARIO</h2> 
+
+       <form id="formulario1" name="formulario1" method="post" action="data.php">
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombre y Apellidos</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="direccion">Dirección</label>
+            <input type="text" name="direccion" id="direccion">
+
+            <label for="telef">Teléf | Cel</label>
+            <input type="text" name="telef" id="telef">
+
+            <label for="fechaIngreso">Fecha Ingreso</label>
+            <select id="fechaIngreso" name="fechaIngreso">
+                <option value="X" selected>2023</option>
+                <option value="A">2022</option>
+                <option value="B">2021</option>
+            </select>
+
+            <label for="puestoTrabajo">Puesto de Trabajo</label>
+            <select id="puestoTrabajo" name="puestoTrabajo">
+                <option value="X" selected>Modelo</option>
+                <option value="A">Modelo2</option>
+                <option value="B">Modelo3</option>
+            </select>
+
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" maxlength="9">
+
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Estado Civil</legend>
+            <label><input type="radio" name="estado_civil" value="Soltero">Soltero</label><br>
+            <label><input type="radio" name="estado_civil" value="Casado">Casado</label><br>
+            <label><input type="radio" name="estado_civil" value="Viudo">Viudo</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Nivel de Satisfacción</legend>
+            <label><input type="checkbox" name="satisfaccion1"> Se siente satisfecho con el trabajo que realiza</label><br>
+            <label><input type="checkbox" name="satisfaccion2"> Los canales de comunicación son adecuados</label><br>
+            <label><input type="checkbox" name="satisfaccion3"> El trato de los directivos es cordial y efectivo</label><br>
+            <label><input type="checkbox" name="satisfaccion4"> El ambiente laboral es adecuado para mi trabajo</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Observaciones</legend>
+            <textarea id="observ" name="observ" rows="6" placeholder="Escribe tus comentarios aquí..."></textarea>
+        </fieldset>
+
+        <div id="botones">
+            <input type="reset" class="btn" value="Nuevo">
+            <input type="submit" class="btn" value="Enviar">
+        </div>
+       </form>
+    </div>
+</body>
+</html>
