@@ -1,0 +1,11 @@
+body{
+    margin: 20px;
+}
+
+#caja{
+    margin: 20px;
+    padding: 0;
+    background-color: aqua;
+    width: 200px;
+    height: 50px;
+}

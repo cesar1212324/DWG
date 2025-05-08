@@ -1,0 +1,39 @@
+*{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: yellow;
+    height: 80px;
+
+}
+
+nav{
+    background-color: green;
+    width:25%;
+}
+
+section{
+    background-color: gray;
+    width: 75%
+}
+
+nav, section{
+    float:left;
+    height: calc(100vh - 130px);
+}
+
+footer{
+    background-color: blue;
+    height:50px;
+    clear:left
+}
+
+li{
+    list-style:none
+}
+
+article{
+    margin-bottom: 10px;
+}
