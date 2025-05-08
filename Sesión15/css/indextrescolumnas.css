@@ -1,0 +1,53 @@
+*{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: firebrick;
+    color: white;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+nav{
+    background-color: lightcoral;
+    width: 20%;
+}
+
+section{
+    background-color: pink;
+    width: 60%;
+}
+
+aside{
+    background-color: lightcoral;
+    width: 20%;
+}
+
+nav,section,aside{
+    float: left;
+    height: calc(100vh - 160px);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: darkred;
+    color: white;
+    clear: left;
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
