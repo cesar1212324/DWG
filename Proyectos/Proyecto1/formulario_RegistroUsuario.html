@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formulario_RegistroUsuario.css">
     <title>Document</title>
 </head>
 <body>
-    
+       <main>
+        <aside>
+            <h2>Bienvenido</h2>
+            <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+            <button>Iniciar sesión</button>
+        </aside>
+         
+        <section>
+           <h2>Nuevo Usuario</h2>
+            <nav class="social-buttons">
+                <button>Registro con Facebook</button>
+                <button>Registro con Google</button>
+            </nav>
+
+            <p class="separator">O registrarse con</p>
+
+            <form>
+                <div class="name-fields">
+                    <input type="text" placeholder="Nombres">
+                    <input type="text" placeholder="Apellidos">
+                </div>
+                <input type="email" placeholder="micorreo@dominio">
+                <input type="password" placeholder="su contraseña">
+                <label class="terms">
+                    <input type="checkbox">
+                    Al crear esta cuenta, aceptas nuestros <strong>términos & condiciones</strong>
+                </label>
+                <button type="submit">Enviar</button>
+            </form>
+           
+        </section>
+       </main>
 </body>
 </html>
