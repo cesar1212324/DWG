@@ -1,0 +1,12 @@
+*{
+    font-family: arial; /* tipo de fuente*/
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: grid;
+    min-height: 80vh; /* minimo alto permitido*/
+    grid-template-columns: 100%;
+    grid-template-rows: ;
+}

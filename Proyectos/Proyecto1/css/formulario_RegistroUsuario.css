@@ -1,121 +1,163 @@
 * {
-    margin: 0; /* Elimina todos los márgenes predeterminados */
-    padding: 0; /* Elimina todos los rellenos predeterminados */
-    box-sizing: border-box; /* Incluye el padding y border dentro del ancho y alto total */
-    font-family: Arial, sans-serif; /* Establece la fuente predeterminada para toda la página */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    display: flex; /* Usa Flexbox para alinear el contenido del body */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    align-items: center; /* Centra el contenido verticalmente */
-    height: 100vh; /* Ocupa toda la altura de la ventana del navegador */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #74ebd5, #acb6e5); /* Fondo con degradado suave */
 }
 
 main {
-    display: flex; /* Usa Flexbox para organizar el contenido principal en filas */
-    width: 800px; /* Define un ancho fijo de 800 píxeles */
-    border: 1px solid #000; /* Aplica un borde negro de 1 píxel */
+    display: flex;
+    width: 900px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    background-color: #ffffff;
 }
 
-/* Aside = panel izquierdo */
+/* Panel izquierdo */
 aside {
-  width: 40%;
-  background-color: #c0c0c0;
-  padding: 30px;
-
-  display: flex;              /* Activamos flexbox */
-  flex-direction: column;     /* En columna vertical */
-  justify-content: center;    /* Centrado vertical */
-  align-items: center;        /* Centrado horizontal */
-  text-align: center;         /* Centra el texto */
+    width: 40%;
+    background: linear-gradient(to bottom right, #2c3e50, #4ca1af); /* Fondo moderno */
+    padding: 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 aside h2 {
-    font-size: 26px; /* Tamaño de letra grande para el título */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 28px;
+    margin-bottom: 15px;
 }
 
 aside p {
-    margin-bottom: 30px; /* Espacio debajo del párrafo */
+    font-size: 16px;
+    margin-bottom: 25px;
 }
 
 aside button {
-    padding: 10px 20px; /* Espacio interno del botón (alto y ancho) */
-    border: none; /* Elimina el borde del botón */
-    background-color: #eee; /* Fondo gris claro */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    box-shadow: 1px 1px 3px #333; /* Aplica sombra para dar relieve */
-    font-weight: bold; /* Texto en negrita */
+    padding: 12px 25px;
+    border: none;
+    background-color: #ffffff;
+    color: #2c3e50;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Section = formulario */
+aside button:hover {
+    background-color: #ecf0f1;
+}
+
+/* Formulario de la derecha */
 section {
-    width: 60%; /* La sección ocupa el 60% del ancho total */
-    padding: 40px 30px; /* Relleno interno: 40px arriba/abajo, 30px izquierda/derecha */
+    width: 60%;
+    padding: 40px 30px;
+    background-color: #f9f9f9;
 }
 
 section h2 {
-    font-size: 24px; /* Tamaño de letra grande para el título */
-    text-align: center; /* Centra el título */
-    margin-bottom: 20px; /* Espacio debajo del título */
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
 }
 
 .social-buttons {
-    display: flex; /* Flexbox para organizar los botones horizontalmente */
-    justify-content: center; /* Centra los botones en el eje horizontal */
-    gap: 10px; /* Espacio de 10px entre cada botón */
-    margin-bottom: 15px; /* Espacio debajo del grupo de botones */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .social-buttons button {
-    padding: 8px 12px; /* Espacio interno en el botón */
-    background-color: #eee; /* Fondo gris claro */
-    border: 1px solid #aaa; /* Borde gris claro */
-    cursor: pointer; /* Cursor de mano al pasar por encima */
+    padding: 10px 16px;
+    background-color: #f0f0f0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.social-buttons button:hover {
+    background-color: #e0e0e0;
 }
 
 .separator {
-    text-align: center; /* Centra el texto */
-    margin: 10px 0; /* Margen vertical de 10px */
+    text-align: center;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #888;
 }
 
 form {
-    display: flex; /* Flexbox para organizar los campos del formulario */
-    flex-direction: column; /* Los elementos se colocan en columna */
-    gap: 10px; /* Espacio de 10px entre cada campo */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .name-fields {
-    display: flex; /* Flexbox para colocar nombre y apellido uno al lado del otro */
-    gap: 10px; /* Espacio de 10px entre los dos inputs */
+    display: flex;
+    gap: 10px;
 }
 
 .name-fields input {
-    flex: 1; /* Ambos inputs ocupan el mismo espacio */
+    flex: 1;
 }
 
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    padding: 8px; /* Espacio interno del campo de texto */
-    border: 1px solid #aaa; /* Borde gris claro */
-    border-radius: 4px; /* Bordes redondeados */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #fff;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4ca1af;
+    outline: none;
 }
 
 .terms {
-    display: flex; /* Flexbox para alinear texto y checkbox */
-    align-items: center; /* Alinea verticalmente en el centro */
-    font-size: 14px; /* Tamaño de fuente más pequeño */
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #555;
 }
 
 .terms input {
-    margin-right: 5px; /* Espacio a la derecha del checkbox */
+    margin-right: 8px;
 }
 
 button[type="submit"] {
-    padding: 10px; /* Espaciado interno del botón */
-    background-color: #ddd; /* Fondo gris medio */
-    border: 1px solid #999; /* Borde gris oscuro */
-    cursor: pointer; /* Cursor de mano */
+    padding: 12px;
+    background-color: #4ca1af;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #3b8c99;
 }
