@@ -52,7 +52,7 @@ footer{
     color: white;
     text-align: center;
     clear: left; /* hacer que el elemnto se ponga abajo en vez de al costado*/
-    line-height: 60px;
+    line-height: 20px;
 }
 
 li{
