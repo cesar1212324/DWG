@@ -6,7 +6,135 @@
 
 main{
     display: grid;
-    min-height: 80vh; /* minimo alto permitido*/
+    /*min-height: 80vh; /* minimo alto permitido*/
     grid-template-columns: 100%;
-    grid-template-rows: ;
+    grid-template-rows: 80px 1fr 100px;
+    grid-template-areas: "my-nav" "my-section" "my-aside";
 }
+
+header{
+    display: flex;
+    background-color: #2C3E50; /* fondo*/
+    color: white; /* color de la letra*/
+    height: 15vh;   /*alto de elemento*/
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+  
+    
+}
+
+nav{
+    grid-area: my-nav;
+    background-color: #8D6748;
+}
+
+section{
+    grid-area: my-section;
+    background-color: #F4F4F4;
+    
+
+}
+aside{
+    grid-area: my-aside;
+    background-color: #EFE2BA;
+}
+
+nav, section,aside{
+    padding: 20px;
+    box-sizing: border-box; /* para que no se desordenen*/
+}
+
+footer{
+    background-color: #3B3B3B;
+    height: 60px;
+    color: white;
+    text-align: center;
+    clear: left; /* hacer que el elemnto se ponga abajo en vez de al costado*/
+    line-height: 60px;
+}
+
+li{
+    list-style: none; /*Elimina el símbolo por defecto de las listas*/
+    display: inline-block; /* los li Se coloca uno al lado del otro*/
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+@media(min-width:600px) and (max-width:1000px){
+    header{
+        height: 100px;
+        line-height: 80px;
+    }
+    main{
+       
+        grid-template-columns: 30% 1fr ;
+        grid-template-rows: 80px 1fr;
+        grid-template-areas: "my-nav my-nav" "my-aside my-section";
+    }
+}
+
+@media(min-width:1001px) {
+    header{
+        height: 150px;
+        line-height: 15px;
+        text-align: center;
+        justify-content: center;
+    }
+    main{
+        grid-template-columns: 20% 1fr 20%;
+        grid-template-rows: 100%;
+        grid-template-areas: "my-nav my-section my-aside";
+        
+    }
+    li{
+        display: block;
+    }
+}
+
+.logo{
+    
+    width: 70px;
+    height: 70px;
+    /*margin-right: 20px*/
+}
+ div h1, h3{
+  margin: 0;    /* Elimina espacios entre ellos */
+  padding: 0;
+  font-weight: normal;
+  
+}
+h1{
+    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centra verticalmente */
+  align-items: center;       /* Centra horizontalmente */
+  line-height: normal;
+}
+
+.ferreteria1{
+    width: 100px;
+    height: 100px;
+}
+.ferreteria2{
+    width: 100px;
+    height: 100px;
+    
+}
+
+.ferreteria3{
+    width: 100px;
+    height: 100px;
+}
+
+.ferreteria4{
+    width: 100px;
+    height: 100px;
+}
+
+
+
