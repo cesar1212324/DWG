@@ -7,26 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-     <div class="formulario">
-    <h2> Mi Agenda de contactos</h2>
-    <hr>
-    <form id="formulario">
-            <label for="nombre">Nombre: </label>
-            <input type="text" id="nombre">
-            <label for="numCelular">Num Celular: </label>
-            <input type="tel" id="numCelular">
-            <hr>
-            <input type="button" id="guardarBtn" value="Guardar datos">
-            <input type="button" id="buscarBtn" value="Buscar">
-            <input type="button" id="eliminarBtn" value="Eliminar datos">
-            <input type="button" id="eliminarTodosBtn" value="Eliminar Todos datos">
-            <br>
-            <hr>
+     <div id="contenedor">
+     <header>
+       <h3>Mi Agencia de contactos</h3> 
+       <hr>
+     </header>
+    <form>
+             <span>Nombre: </span>
+            <input type="text" placeholder="Nombre" id="nombre"><br><br>
+            <span>Num Celular: </span>
+            <input type="text" placeholder="numCelular" id="numCelular"><br><br>
+    </form>
+    <hr />
+    <div>
+             <button type="button" id="guardarBtn">Guardar</button>
+             <button type="button" id="buscarBtn">Buscar</button>
+             <button type="button" id="eliminarBtn">Eliminar datos</button>
+             <button type="button" id="eliminarTodosBtn">Eliminar Todos datos</button>
 
-            <span class="titulo">Nombre </span>
-            <span class="titulo"> Celular</span>
+    </div>      
+    <hr>
+
+
+            <span class="titulo">Nombre </span> <span class="titulo"> Celular</span><br>
             <ul id="contactos"></ul>
-        </form>
     </div> 
     <script src="js/agendaV2.js"></script>
 </body>

@@ -1,79 +1,102 @@
+
+
+span{
+    width: 100px;
+    display: block;
+    float: left;
+    padding-left: 4px;
+}
+
 html, body {
     height: 100%;
     margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f7f7f7;
 }
 
 body {
     display: flex;
-    justify-content: center; /* centra horizontal */
-    align-items: center;     /* centra vertical */
-    height: 100vh;           /* altura total de la ventana */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    height: 100vh;
 }
 
-.formulario {
-    background-color: white;
-    padding: 20px 30px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    width: 350px;
-    box-sizing: border-box;
+#contenedor{
+    width: 360px;
+    margin: auto;
+    background-color: floralwhite;
+    padding-left: 10px;
+    font-family: calibri;
+
 }
 
-h2 {
+header h3 {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 0;
+    font-size: 1.5em;
 }
 
-label {
-    display: block;
-    margin-top: 10px;
+hr {
+    margin: 15px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+form span {
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="tel"] {
+input[type="text"] {
     width: 100%;
-    padding: 7px;
+    padding: 8px;
     margin-top: 5px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-input[type="button"] {
-    margin: 10px 5px 0 0;
-    padding: 7px 15px;
-    border: none;
+button {
+    margin-top: 10px;
+    margin-right: 8px;
+    padding: 8px 12px;
     background-color: #007BFF;
+    border: none;
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 14px;
 }
 
-input[type="button"]:hover {
+button:hover {
     background-color: #0056b3;
-}
-
-hr {
-    margin: 15px 0;
-    border: none;
-    border-top: 1px solid #ddd;
 }
 
 .titulo {
     font-weight: bold;
     display: inline-block;
     width: 48%;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    background-color: #0df39b;
 }
 
 #contactos {
     list-style-type: none;
     padding-left: 0;
+    margin-top: 10px;
     max-height: 150px;
     overflow-y: auto;
-    border: 1px solid #ddd;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: darkgray;
+}
+
+li{
+    list-style: none;
+    margin-top: 1px;
+}
+
+ul{
+    margin: 0px;
+    padding-left: 0px;
 }
