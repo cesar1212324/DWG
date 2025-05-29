@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/agendaV2.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="formulario">
+    <h2> Mi Agenda de contactos</h2>
+    <hr>
+    <form id="formulario">
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre">
+            <label for="numCelular">Num Celular: </label>
+            <input type="tel" id="numCelular">
+            <hr>
+            <input type="button" id="guardarBtn" value="Guardar datos">
+            <input type="button" id="buscarBtn" value="Buscar">
+            <input type="button" id="eliminarBtn" value="Eliminar datos">
+            <input type="button" id="eliminarTodosBtn" value="Eliminar Todos datos">
+            <br>
+            <hr>
+
+            <span class="titulo">Nombre </span>
+            <span class="titulo"> Celular</span>
+            <ul id="contactos"></ul>
+        </form>
+    </div> 
+    <script src="js/agendaV2.js"></script>
+</body>
+</html>
