@@ -1,0 +1,60 @@
+.cuadrado{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin-left: 20px;
+}
+
+.rombo{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin-left: 20px;
+    transform: rotate(45deg);
+}
+.paralelogramo{
+    width: 150px;
+    height: 100px;
+    background-color: brown;
+    margin-left: 20px;
+    transform: skew(20deg);
+}
+
+.triangulo{
+    width: 0px;
+    height: 0px;
+    margin-left: 20px;
+    border-left: 50px solid red;
+    border-top: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
+}
+
+.circulo{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+
+.circulo2{
+    width: 0px;
+    height: 0px;
+    margin-left: 20px;
+    border-radius: 100%;
+    border-left: 50px solid red;
+    border-top: 50px solid red;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid red;
+}
+
+.diamante{
+    width: 100px; /* en base al cuadrado*/
+    height: 100px;
+    background-color: brown;
+    margin-left: 20px;
+    clip-path: polygon(0 50%, 25% 0, 75% 0, 100% 50%, 50% 100%); /* coordenada x, y*/
+}
+
+
