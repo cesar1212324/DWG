@@ -1,5 +1,5 @@
 .animado{
-    width: 50%;
+    width: 38%;
     transition: all 1s;
     clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
 }
