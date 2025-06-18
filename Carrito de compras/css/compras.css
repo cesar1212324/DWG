@@ -55,50 +55,12 @@ nav a{
 /* --------------------------------------------*/
 
 section{
-    display: flex;
-    justify-content: space-between;
-    background-color: cornflowerblue;
-    grid-area: my-section;
-
+  background-color: cornflowerblue;  
+  grid-area: my-section;
+  
 }
 
-.divsection1{
-    text-align: center;
-}
-.divsection2{
-    text-align: center;
 
-}
-
-.artesania1{
-    padding: 40px;
-}
-
-.detalle{
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    
-    
-}
-.detalle1{
-    height: 200px;
-    width: 180px;
-    padding: 100px;
-   
-    
-}
-.detalle2{
-    height: 200px;
-    width: 180px;
-    padding: 100px;
-    
-}
-.detalle3{
-    height: 200px;
-    width: 180px;
-    padding: 100px;
-}
 /* =========================================*/
 footer{
     display: flex;
