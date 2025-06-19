@@ -1,0 +1,45 @@
+*{
+    
+    font-family: Arial;
+}
+
+
+header{
+    background-color: firebrick;
+    height: 18vh;
+    
+}
+
+
+nav {
+    background-color:rgb(204, 67, 67) ;
+    height: 8vh;
+  }
+  
+  section {
+    background-color:pink;
+    height: 48vh;
+  }
+  
+  aside {
+    background-color: lightcoral;
+    height: 8vh;
+  }
+
+footer{
+    background-color: darkred;
+    color: white;
+    height: 18vh;
+}
+
+li{
+    list-style: none;
+    /*El menu se ve en una sola linea: */
+    display: inline-block;
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
