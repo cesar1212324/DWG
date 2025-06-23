@@ -1,4 +1,7 @@
 
+body {
+  overflow-x: hidden; /* Bloquea el desplazamiento horizontal */
+}
 .bg-info-sutil {
   background-color: powderblue;
 }
