@@ -1,0 +1,118 @@
+
+.bg-info-sutil {
+  background-color: powderblue;
+}
+
+.align-items-center{
+    height: 150px
+}
+.form-control{
+    width: 550px;
+}
+.facebook, .twitter, .ig, .google{
+    margin: 20px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+@media (max-width: 991.98px) {
+  .fila-uno {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .fila-uno > div {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+#fila3{
+    background-color: gray;
+}
+
+@media (max-width: 991.98px) {
+  #fila3 {
+    height: 60px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: center;
+  }
+  #fila3id{
+      text-align: center;
+  }
+}
+
+#columna-lista{
+    padding: 30px;
+}
+#nuestros-servicios, #n-s {
+    color: blue;
+}
+#productos, #n-s {
+    color: blue;
+}
+
+#imagen2{
+    height: 270px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#imagen3{
+    height: 270px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#imagen4{
+    height: 270px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#imagen5{
+    height: 270px;
+    width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#fila1-piepagina{
+    background-color: aqua;
+}
+
+#correo , #boton{
+    display: block;
+}
+#fila2-piepagina{
+    background-color: black;
+    color: white;
+}
+#grupo-listas{
+    background-color: black;
+    color: white;
+}
+
+#ultimo{
+    background-color: rgb(51, 50, 50);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

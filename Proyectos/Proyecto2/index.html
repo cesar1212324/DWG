@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     
     <title>Bootstrap</title>
 </head>
@@ -11,9 +14,9 @@
         <!-- encabezado -->
          <header class="container-fluid">
             <!-- fila 1 -->
-             <div class="row py-1 bg-info">
+             <div class="row py-1 bg-info fila-uno">
                 <!-- columna 1 de la fila 1 -->
-                 <div class="col">
+                 <div class="col-sm-12 col-md-12 col-lg-6">
              <ul class="nav nav-pills">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
@@ -30,7 +33,7 @@
                 </ul>
                  </div>
                 <!-- columna 2 de la fila 1 -->
-                 <div class="col">
+                 <div class="col-sm-12 col-md-12 col-lg-6">
                         <ul class="nav nav-pills">
                             
                             <li class="nav-item dropdown">
@@ -63,24 +66,96 @@
                  </div>
              </div>
                <!-- fila 2 -->
-             <div class="row">
+             <div class="row bg-info-sutil fila-dos">
                  
-                <div class="col-sm-12 col-lg-3">
-
+                <div class="col-sm-12 col-md-12 col-lg-3">
+                    <img src="img/Copilot_20250622_132752.png" class="img-fluid" alt="logo">
                 </div>
 
-                <div class="col-sm-4 col-lg-6">
-
+                <div class="col-sm-12 col-md-8 col-lg-6">
+                       <nav class="navbar">
+                        <div class="container-fluid  justify-content-center align-items-center">
+                            <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar"/>
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                        </div>
+                        </nav>
                 </div>
 
-                <div class="col-sm-4 col-lg-3">
+                <div class="col-sm-12 col-md-4 col-lg-3 d-flex justify-content-center align-items-center">
+                    <div class="facebook bg-info rounded">
+                    <i class="bi bi-facebook"></i>
+                     </div>
+
+                     <div class="ig bg-info rounded">
+                    <i class="bi bi-instagram"></i>
+                     </div>
+
+                     <div class="twitter bg-info rounded">
+                    <i class="bi bi-twitter"></i>
+                     </div>
+
+                     <div class="google bg-info rounded">
+                    <i class="bi bi-google"></i>
+                     </div>
 
                 </div>
 
              </div>
                 <!-- fila 3 -->
-             <div class="row">
-                 <div class="col">
+             <div class="row" id="fila3">
+                 <div class="col-sm-12 col-md-12 col-lg-12 " id="fila3id">
+
+                    <nav class="navbar navbar-expand-md">
+  <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Mujeres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Hombres</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Niños</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Invierno
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Poleras</a></li>
+            <li><a class="dropdown-item" href="#">Bufandas</a></li>
+            <li><a class="dropdown-item" href="#">Casacas</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Verano
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Short</a></li>
+            <li><a class="dropdown-item" href="#">Polos</a></li>
+            <li><a class="dropdown-item" href="#">Gorras</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Ofertas</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
 
                  </div>
              </div>
@@ -88,13 +163,349 @@
      
 
          <!-- contenido -->
-          <main class="container-fluid">
+          <main >
+                <!-- fila 1 -->
+               <div class="row" id="fila-uno-main">
+                   <!-- columna 1 de 2 -->
+                  <div class="col-sm-12 col-md-9 col-lg-9">
+                    <img src="img/imagen-de inicio.webp" class="img-fluid" alt="imagen de inicio" id="imagen-inicio">
+                  </div>
+                  <!-- columna 2 de 2 -->
+                  <div class="col-sm-12 col-md-3 col-lg-3" id="columna-lista">
+                    <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">Marcas</li>
+                    <li class="list-group-item">Levi´s</li>
+                    <li class="list-group-item">Lacoste</li>
+                    <li class="list-group-item">Ralph lauren</li>
+                    <li class="list-group-item">Wrangler</li>
+                    <li class="list-group-item">Lee</li>
+                    <li class="list-group-item">Adidas</li>
+                    <li class="list-group-item">Hawk</li>
+                    <li class="list-group-item">Topitop</li>
+                    <li class="list-group-item">Vans</li>
+                    </ul>
+
+                  </div>
+               </div>
+                 <!-- fila 2 -->
+               <div class="row" id="fila-dos-main">
+                 <!-- columna 1 -->
+                <div class="col">
+                    <h3 id="nuestros-servicios">Nuestros servicios</h3><hr id="n-s">
+                    
+                    <div class="row container-fluid">
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body d-flex align-items-center">
+        <i class="bi bi-check fs-1"></i>
+        <h5 class="card-title">Calidad garantizada</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body d-flex align-items-center gap-2">
+        <i class="bi bi-bus-front fs-1"></i>
+        <h5 class="card-title">Envio sin costo adicional</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body d-flex align-items-center gap-3">
+        <i class="bi bi-shuffle fs-1"></i>
+        <h5 class="card-title">14 dias para devolucion</h5>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-3">
+    <div class="card">
+      <div class="card-body d-flex align-items-center gap-3">
+        <i class="bi bi-telephone-fill fs-1"></i>
+        <h5 class="card-title">Soporte a cualquier hora</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+                </div>
+
+               </div>
+               <!-- fila 3 -->
+               <div class="row">
+                <h3 id="productos">Productos</h3><hr id="n-s">
+                 <!-- columna 1 -->
+                  <div class="col">
+                    
+                    <div class="row container-fluid row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://w7.pngwing.com/pngs/570/410/png-transparent-dress-shirt-t-shirt-sleeve-button-short-sleeve-blue-white-electric-blue.png" class="card-img-top" alt="imagen1">
+      <div class="card-body text-center">
+        <h4 class="card-title">Camisa celeste</h4>
+        <h5 class="card-title">S/. 120</h5>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-center">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://yansus.com/cdn/shop/files/poleraNegrocapuchaamarillaconestampado1.png?v=1692590418" class="card-img-top mx-auto" alt="imagen2" id="imagen2">
+      <div class="card-body text-center">
+        <h4 class="card-title">Polera negra</h4>
+        <h5 class="card-title">S/. 100</h5>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-center">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZzs1AK-GBFQlye4gSoeDh8-3Qjqk_2rORJQ&s" class="card-img-top mx-auto" alt="imagen3" id="imagen3">
+      <div class="card-body text-center">
+        <h4 class="card-title">Conjunto jean</h4>
+        <h5 class="card-title">S/. 180</h5>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-center">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tQ9CVQbPpVjOM5NQd7ceRc3OKkgmBZ5T5g&s" class="card-img-top mx-auto" alt="imagen4" id="imagen4">
+      <div class="card-body text-center">
+        <h4 class="card-title">Pantalon jean</h4>
+        <h5 class="card-title">S/. 130</h5>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-center">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://www.babyyuval.pe/13308-superlarge_default/polera-de-franela-algodon-oso-beige.jpg" class="card-img-top mx-auto" alt="imagen5" id="imagen5">
+      <div class="card-body text-center">
+        <h4 class="card-title">Polera</h4>
+        <h5 class="card-title">S/. 110</h5>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-center">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,e_sharpen:95,w_500,h_500/global/398415/03/sv01/fnd/PER/fmt/png/Zapatillas-PUMA-180-Lace-Interest-unisex" class="card-img-top mx-auto" alt="imagen6" id="imagen5">
+      <div class="card-body text-center">
+        <h4 class="card-title">Zapatillas</h4>
+        <h5 class="card-title">S/. 300</h5>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-center">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://clock.pe/cdn/shop/products/RELOJ_MINIFOCUS_ORIGINAL_CASUAL_MARR_N_MIN-1_3_1000x.jpg?v=1729988882" class="card-img-top mx-auto" alt="imagen7" id="imagen5">
+      <div class="card-body text-center">
+        <h4 class="card-title">Reloj</h4>
+        <h5 class="card-title">S/. 550</h5>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-center">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+
+      </div>
+    </div>
+  </div>
+
+   <div class="col">
+    <div class="card h-100">
+      <img src="https://oechsle.vteximg.com.br/arquivos/ids/16767811-1000-1000/image-dd4f854614f142d0997fd7470b1c5f47.jpg?v=638353117753830000" class="card-img-top mx-auto" alt="imagen8" id="imagen5">
+      <div class="card-body text-center">
+        <h4 class="card-title">Falda</h4>
+        <h5 class="card-title">S/. 120</h5>
+        <a href="#" class="btn btn-primary">Comprar</a>
+      </div>
+      <div class="card-footer text-center">
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-fill text-warning"></i>
+        <i class="bi bi-star-half text-warning"></i>
+        <i class="bi bi-star text-warning"></i>
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+                  </div>
+               </div>
 
           </main>
 
           <!-- pie de pagina -->
           <footer class="container-fluid">
+            <!-- fila 1 -->
+            <div class="row" id="fila1-piepagina">
+                <!-- columna 1 -->
+                <div class="col text-center">
+                    <h1>Suscribirse para recibir novedades</h1> <br>
+                    <p>!Cupones exclusivos y notificaciones de nuestros mejores eventos¡</p> <br>
+                    <form class="row g-3 d-flex justify-content-center ">
 
+  <div class="col-12 d-flex justify-content-center" id="correo">
+    <label for="inputPassword2" class="visually-hidden">Password</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="col-12" id="boton">
+    <button type="submit" class="btn btn-primary mb-3">SUSCRIBIRSE</button>
+  </div>
+
+  <div class="form-check d-flex justify-content-center">
+  <input class="form-check-input" type="checkbox" value="" id="checkDefault">
+  <label class="form-check-label" for="checkDefault">
+    He leido y acepto la politica de privacidad de datos personales
+  </label>
+</div>
+
+</form>
+                </div>
+
+            </div>
+            <!-- fila 2 -->
+            <div class="row" id="fila2-piepagina">
+                <!-- columna 1 de 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                    <h5>ACERCA DE TIENDA D´MODA</h5>
+                    <p>Somos una tienda especializada en venta de ropa, zapatillas y muchas cosas más </p>
+
+                    <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <div class="facebook rounded" id="fb">
+                    <i class="bi bi-facebook"></i>
+                     </div>
+
+                     <div class="ig rounded" id="ig">
+                    <i class="bi bi-instagram"></i>
+                     </div>
+
+                     <div class="twitter rounded" id="tw">
+                    <i class="bi bi-twitter"></i>
+                     </div>
+
+                     <div class="google rounded" id="go">
+                    <i class="bi bi-google"></i>
+                     </div>
+
+                </div>
+                </div>
+                <!-- columna 2 de 3 -->
+                <div class="col-sm-6 col-md-4 col-lg-4">
+                <h5>UBICANOS EN</h5>
+                  <div class="container-fluid d-flex  align-items-center gap-2">
+                    <i class="bi bi-house fs-3"></i>
+                    <p>Carretera pimentel km40, Chiclayo</p>
+                  </div>
+
+                  <div class="container-fluid d-flex align-items-center gap-2">
+                    <i class="bi bi-envelope fs-3"></i>
+                    <p>ventas@tiendamoda.com</p>
+                  </div>
+                  
+                  <div class="container-fluid d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone fs-3"></i>
+                    <p>+51 967342156</p>
+                  </div>
+
+
+                </div>
+                <!-- columna 3 de 3 -->
+                <div class="col-md-4 col-lg-4">
+                    <h5>HORARIO DE ATENCIÓN</h5>
+
+                  
+  <div class="mx-auto" style="max-width: 500px;">
+  <ul class="list-group list-group-horizontal justify-content-between w-100 mb-2">
+    <li class="list-group-item flex-fill text-center"><strong>LUN - VIE</strong></li>
+    <li class="list-group-item flex-fill text-center">8am - 9pm</li>
+  </ul>
+
+  <ul class="list-group list-group-horizontal justify-content-between w-100 mb-2">
+    <li class="list-group-item flex-fill text-center"><strong>SAB - DOM</strong></li>
+    <li class="list-group-item flex-fill text-center">8am - 6pm</li>
+  </ul>
+
+  <ul class="list-group list-group-horizontal justify-content-between w-100">
+    <li class="list-group-item flex-fill text-center"><strong>Feriado</strong></li>
+    <li class="list-group-item flex-fill text-center">9am - 1pm</li>
+  </ul>
+</div>
+
+
+
+
+                </div>
+            </div>
+            <!-- fila 3 -->
+            <div class="row text-center" id="ultimo">
+                  <div class="col">
+                    <p>© 2024 Copyrigth, adaptado por César Smith Peña Cabanillas</p>
+                  </div>
+            </div>
           </footer>
        
        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js
