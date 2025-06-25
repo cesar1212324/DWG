@@ -1,0 +1,64 @@
+/*=========================================ENCABEZADO======================================================*/
+header{
+    background-color: beige;
+}
+.logo{
+   height: 200px; 
+}
+.iconos-encabezado{
+     padding-left: auto;
+  padding-right: 70px;
+   
+}
+.navegacion{
+     padding-left: auto;
+  padding-right: 70px;
+}
+/* ==========================================================================================================*/
+
+/* ==============================================MAIN=======================================================*/
+.imagen-carrusel{
+    height: 450px;   
+}
+.carousel-inner {
+  padding: 0;
+  margin: 0;
+}
+.titulo-categorias{
+    padding: 30px;
+}
+.tarjeta-categorias{
+    padding: 30px;
+}
+.card-img-top{
+    height: 200px;
+}
+
+.titulo-testimonios{
+     padding: 30px;
+}
+
+.lista-testimonio{
+    list-style: none;
+}
+
+/* ==========================================================================================================*/
+
+/* ====================================================FOOTER================================================*/
+footer{
+    background-color: beige;
+}
+
+.fila-piePagina{
+    padding: 30px;
+}
+
+.iconos-piePagina i {
+  margin-right: 10px;
+  list-style: none;
+}
+
+.iconos-piePagina{
+  list-style: none;
+}
+
