@@ -17,16 +17,19 @@ header{
 /* ==========================================================================================================*/
 
 /* ==============================================MAIN=======================================================*/
-
-.titulo-compras{
+.titulo-productos{
     padding: 30px;
 }
-#columna-productos{
+.tarjeta-productos{
     padding: 30px;
 }
+.proyectos-logo{
+   height: 4000px;
+   width: 300px;
+}
 
-#columna-resumen{
-   padding: 80px; 
+.card-img-top{
+    height: 200px;
 }
 
 
